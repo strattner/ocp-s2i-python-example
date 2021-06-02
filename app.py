@@ -28,7 +28,7 @@ def netaddr(host_ip, prefix):
     ip_address = host_ip + '/' + prefix
     try:
         ip_net = ipaddress.ip_network(ip_address, False)
-        output = {'network_address': str(ip_net.network_addressi),
+        output = {'network_address': str(ip_net.network_address),
                   'network_mask': str(ip_net.netmask),
                   'first_host': str(ip_net[1]),
                   'last_host': str(ip_net[-2]),
